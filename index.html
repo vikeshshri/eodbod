@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Home | Eodbod</title>
+    <meta
+      name="description"
+      content="eodbod runs errands for you: shopping, deliveries, pickups, and business tasks. Same-day options. Book online."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Roboto+Condensed:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo-mark.png" type="image/png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo-site" href="#top" aria-label="eodbod.com — Home">
+          <img
+            class="logo-mark"
+            src="images/logo-mark.png"
+            alt=""
+            width="120"
+            height="80"
+            decoding="async"
+            fetchpriority="high"
+            aria-hidden="true"
+          />
+          <span class="logo-wordmark">eodbod.com</span>
+        </a>
+        <nav class="nav-main" aria-label="Main">
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Book a task</a>
+          <a class="nav-call" href="tel:8433856770" title="Tap to call eodbod">Call us · 8433856770</a>
+
+        </nav>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu">
+          Menu
+        </button>
+      </div>
+      <div id="nav-drawer" class="nav-drawer" hidden>
+        <nav aria-label="Mobile">
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Book a task</a>
+          <a href="tel:8433856770">Call us · 8433856770</a>
+
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <section class="hero" id="top">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">Helping hands in busy life | Home &amp; work</p>
+            <h1 class="hero-title">
+              <span class="hero-title-line">GET</span>
+              <span class="hero-title-line">YOUR</span>
+              <span class="hero-title-line">PENDING</span>
+              <span class="hero-title-line hero-title-line--accent">WORK DONE!</span>
+            </h1>
+            <p class="hero-promise">
+              Skip the busywork—we’ll take care of <strong>shopping, deliveries, pickups,</strong> and those
+              <strong>small jobs</strong> that pile up. You relax; we run around.
+            </p>
+            <figure class="hero-photo">
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                width="1200"
+                height="800"
+                alt="Courier delivering a package—representing reliable errand and delivery help"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </figure>
+          </div>
+          <div class="contact-card" id="contact">
+            <h2 class="contact-card__title">Tell us what you need</h2>
+                <form id="contact-form" class="form-grid" novalidate>
+
+              <div class="field-half">
+                <label for="full-name">Your name <span class="req" aria-hidden="true">*</span></label>
+                <input
+                  id="full-name"
+                  name="fullName"
+                  type="text"
+                  required
+                  autocomplete="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="field-half">
+                <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="field-half">
+                <label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  autocomplete="tel"
+                  placeholder="Phone"
+                />
+              </div>
+              <div class="field-half">
+                <label for="location">Location <span class="req" aria-hidden="true">*</span></label>
+                <input
+                  id="location"
+                  name="location"
+                  type="text"
+                  required
+                  placeholder="Your location"
+                />
+              </div>
+              <div>
+                <label for="description"
+                  >What should we do for you? <span class="req" aria-hidden="true">*</span></label
+                >
+                <textarea
+                  id="description"
+                  name="workDescription"
+                  required
+                  placeholder="Your errand"
+                ></textarea>
+              </div>
+              <div>
+                <label for="urgency">How soon do you need it? <span class="req" aria-hidden="true">*</span></label>
+                <select id="urgency" name="workUrgency" required>
+                  <option value="" selected disabled>When</option>
+                  <option value="standard">Flexible — this week is fine</option>
+                  <option value="soon">Pretty soon — next few days</option>
+                  <option value="urgent">Urgent — as fast as possible</option>
+                  <option value="same-day">Today — same-day if you can</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">send my task</button>
+            </form>
+            <p class="contact-card__trust">We read every message and reply as soon as we can. No spam—promise.</p>
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="why">
+        <div class="section-inner">
+          <h2 class="section-heading reveal">WHY CHOOSE US</h2>
+          <p class="section-intro reveal">Simple reasons people trust us with their to-do list.</p>
+          <div class="three-cols">
+            <article class="card reveal">
+              <figure class="card-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  width="800"
+                  height="533"
+                  alt="Shopping bags and groceries for personal errand services"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3 class="title-stacked">EFFICIENT ERRAND<br />RUNNING</h3>
+              <p>
+                We treat your list like our own—clear updates, careful handoffs, and no cutting corners.
+                You tell us what “done” looks like; we aim to match it.
+              </p>
+              <a class="card-link" href="#testimonials">See what clients say</a>
+            </article>
+            <article class="card reveal">
+              <figure class="card-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  width="800"
+                  height="534"
+                  alt="Team collaborating with a focus on customer service"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3 class="title-stacked">CUSTOMER FOCUS</h3>
+              <p>
+                Questions? Changes? We’re easy to reach and happy to adjust. Good service should feel
+                straightforward—not stressful.
+              </p>
+              <a class="card-link" href="#contact">Say hello</a>
+            </article>
+            <article class="card reveal">
+              <figure class="card-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                  width="800"
+                  height="533"
+                  alt="Clock face suggesting availability around the clock"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3 class="title-stacked">AVAILABLE WHEN<br />YOU NEED US</h3>
+              <p>
+                Early morning or last-minute pinch—reach out. We’ll be straight about what we can do and
+                when, so you’re never left guessing.
+              </p>
+              <a class="card-link" href="tel:8433856770">Call to get started</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-inner">
+          <h2 class="section-heading reveal">ABOUT US</h2>
+          <p class="section-intro reveal">We’re here to give you your time back.</p>
+          <div class="about-split reveal">
+            <figure class="about-photo">
+              <img
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+                width="1000"
+                height="667"
+                alt="Person working on a laptop—balancing work and life with help from errand services"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <p class="about-block">
+              Life gets busy. eodbod exists to cross things off your list—errands, pickups, and those “I’ll
+              do it later” jobs—so you can focus on work, family, or simply breathing room. We’re reliable,
+              easy to reach, and genuinely happy to help.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="services">
+        <div class="section-inner">
+          <h2 class="section-heading reveal">OUR SERVICES</h2>
+          <p class="section-intro reveal">Pick what fits—you can always ask for something custom.</p>
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <figure class="service-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&amp;fit=crop&amp;w=640&amp;q=80"
+                  width="640"
+                  height="427"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3>Personal errands</h3>
+              <p>
+                Groceries, dry cleaning, gifts, scheduling—if it’s on your personal list, we can often handle
+                it. Tell us what you need and we’ll make a plan.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <figure class="service-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;w=640&amp;q=80"
+                  width="640"
+                  height="427"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3>Business errands</h3>
+              <p>
+                Office runs, admin tasks, last-minute pickups—we support teams and solo pros who’d rather
+                stay focused than run across town.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <figure class="service-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&amp;fit=crop&amp;w=640&amp;q=80"
+                  width="640"
+                  height="427"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3>Urgent &amp; same-day</h3>
+              <p>
+                Something popped up? Say so when you reach out—we’ll do our best to fit you in and move
+                fast.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <figure class="service-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&amp;fit=crop&amp;w=640&amp;q=80"
+                  width="640"
+                  height="427"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3>Special requests</h3>
+              <p>
+                Events, organizing, travel prep—non-routine stuff is OK. Describe it and we’ll let you
+                know how we can help.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <figure class="service-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=640&amp;q=80"
+                  width="640"
+                  height="427"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3>Customized<br />packages</h3>
+              <p>
+                One-off task or regular help? We’ll shape something that matches your routine and budget—
+                just ask.
+              </p>
+            </article>
+            <article class="service-card reveal">
+              <figure class="service-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1585704032915-cbd0c7a8e605?auto=format&amp;fit=crop&amp;w=640&amp;q=80"
+                  width="640"
+                  height="427"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <h3>Drain cleaning</h3>
+              <p>
+                Clogs and slow drains—we can help clear things up and keep water flowing. Mention it when
+                you contact us.
+              </p>
+            </article>
+          </div>
+          <div class="services-cta reveal">
+            <a class="btn btn-outline" href="tel:8433856770">Prefer to call? Tap here</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="section-inner">
+          <h2 class="section-heading reveal">CLIENT TESTIMONIALS</h2>
+          <p class="section-intro reveal">Real words from people who’ve handed us their list.</p>
+          <div class="testimonials">
+            <div class="testimonial reveal">
+              <p class="name">Keshav Patil</p>
+              <blockquote>
+                ״Outstanding service! eodbod.com handled my personal errands efficiently, and the team was
+                professional and reliable throughout the process.״
+              </blockquote>
+            </div>
+            <div class="testimonial reveal">
+              <p class="name">Naveen Patel</p>
+              <blockquote>
+                ״I highly recommend eodbod.com for their exceptional errand running services. They took
+                care of my urgent tasks promptly and with great attention to detail.״
+              </blockquote>
+            </div>
+            <div class="testimonial reveal">
+              <p class="name">Sai She</p>
+              <blockquote>
+                ״Fast and reliable! eodbod.com assisted me with managing my business errands, and I
+                couldn't be more satisfied with the level of professionalism and efficiency.״
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="faq">
+        <div class="section-inner">
+          <h2 class="section-heading reveal">
+            FREQUENTLY ASKED<br />
+            QUESTIONS
+          </h2>
+          <p class="section-intro reveal">Quick answers—still stuck? Call or message us; we’re happy to explain.</p>
+          <div class="faq-grid reveal">
+            <div class="faq-row">
+              <div class="faq-q">What types of errands do you handle?</div>
+              <div class="faq-a">
+                Personal stuff (shops, pickups, gifts), business tasks, urgent “need it now” jobs, and
+                odd requests. If it’s legal and doable, ask—we’ll tell you honestly if we’re a fit.
+              </div>
+            </div>
+            <div class="faq-row">
+              <div class="faq-q">Are your errand runners reliable?</div>
+              <div class="faq-a">
+                Yes. We focus on clear communication, showing up when we say we will, and double-checking
+                details so you’re not left wondering what happened.
+              </div>
+            </div>
+            <div class="faq-row">
+              <div class="faq-q">Do you offer same-day errand running?</div>
+              <div class="faq-a">
+                Often, yes—it depends on timing and location. Mark it as urgent or same-day when you reach
+                out and we’ll confirm what’s possible.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal for Thank You -->
+      <div id="thankyou-modal" style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100vw;height:100vh;background:rgba(15,23,42,0.25);align-items:center;justify-content:center;">
+        <div style="background:#fff;padding:2em 2.5em;border-radius:16px;box-shadow:0 8px 32px rgba(15,23,42,0.12);max-width:90vw;text-align:center;animation:pop-in 0.4s cubic-bezier(.68,-0.55,.27,1.55);">
+          <div style="display:flex;justify-content:center;gap:0.5em;margin-bottom:1em;">
+            <span style="font-size:4.5em;display:inline-block;animation:bounce 1.2s infinite alternate;filter: hue-rotate(-20deg) brightness(1.1) saturate(2);">😊</span>
+          </div>
+          <h2 style="color:#f1723a;margin-bottom:0.5em;">Thank you for contacting eodbod.com!</h2>
+          <p style="font-size:1.15em;">We will get your task done shortly!</p>
+          <button id="close-thankyou-modal" style="margin-top:1.5em;padding:0.6em 2em;background:#f1723a;color:#fff;border:none;border-radius:8px;font-size:1em;cursor:pointer;">Close</button>
+        </div>
+      </div>
+      <style>
+        @keyframes pop-in {
+          0% { transform: scale(0.7); opacity: 0; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes bounce {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-18px); }
+        }
+      </style>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-brand">EODBOD.COM</p>
+      <p class="footer-tagline">Errands &amp; everyday tasks—handled with care.</p>
+      <p class="footer-call-label">Call us</p>
+      <p class="footer-phone"><a href="tel:8433856770">8433856770</a></p>
+      <p class="footer-email"><a href="mailto:info@eodbod.com">info@eodbod.com</a></p>
+      <p class="footer-address">Mumbai, Maharashtra</p>
+      <p class="footer-legal">
+        <a href="#">Privacy Policy</a><span aria-hidden="true"> · </span><a href="#">Accessibility Statement</a>
+      </p>
+      <p class="footer-copy">© 2026 eodbod.com. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

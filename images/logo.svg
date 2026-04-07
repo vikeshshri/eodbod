@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 268 48" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">eodbod.com</title>
+  <image
+    xlink:href="logo-mark.png"
+    href="logo-mark.png"
+    x="0"
+    y="2"
+    width="52"
+    height="44"
+    preserveAspectRatio="xMidYMid meet"
+  />
+  <text
+    x="58"
+    y="31"
+    font-family="Roboto Condensed, Arial Narrow, Helvetica Neue Condensed, Arial, sans-serif"
+    font-size="19"
+    font-weight="500"
+    fill="#3c3c3b"
+  >
+    eodbod.com
+  </text>
+</svg>
