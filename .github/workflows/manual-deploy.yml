@@ -1,0 +1,11 @@
+name: Manual Deploy Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print deploy test
+        run: echo "Manual deploy workflow is working!"
