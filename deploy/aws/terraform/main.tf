@@ -29,8 +29,12 @@ resource "tls_private_key" "main" {
 }
 
 resource "aws_key_pair" "main" {
-  key_name   = "eodbod-key"
+  key_name   = "eodbod-key-${random_id.suffix.hex}"
   public_key = tls_private_key.main.public_key_openssh
+}
+
+resource "random_id" "suffix" {
+  byte_length = 4
 }
 
 # Get the latest Ubuntu 20.04 LTS AMI
